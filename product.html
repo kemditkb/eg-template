@@ -79,8 +79,8 @@
                 <img src="https://images.unsplash.com/photo-1498480086004-2400bd8c3663?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bf38b7a55952ed8c408ae775094f9dd&auto=format&fit=crop&w=1350&q=80"
                     alt="" id="b_img" width="100%">
                 <div class="container py-2">
-                    <div class="row">
-                        <div class="col-md-4 py-1">
+                    <div class="row px-0">
+                        <div class="col-md-4 px-0 py-1">
                             <div class="border" style="padding: 2px">
                                 <a class="s_img">
                                     <img src="https://images.unsplash.com/photo-1498480086004-2400bd8c3663?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bf38b7a55952ed8c408ae775094f9dd&auto=format&fit=crop&w=1350&q=80"
@@ -88,7 +88,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4 py-1">
+                        <div class="col-md-4 px-0 py-1">
                             <div class="border" style="padding: 2px">
                                 <a class="s_img">
                                     <img src="https://images.unsplash.com/photo-1494847169657-b5c02877b489?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53cd5fb69fbd43e22f10be2334291637&auto=format&fit=crop&w=1350&q=80"
@@ -96,7 +96,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4 py-1">
+                        <div class="col-md-4 px-0 py-1">
                             <div class="border" style="padding: 2px">
                                 <a class="s_img">
                                     <img src="https://images.unsplash.com/photo-1502911714542-002b74c313cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b04f168ab65b8b645b29c46f2124173&auto=format&fit=crop&w=1351&q=80"
@@ -104,7 +104,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4 py-1">
+                        <div class="col-md-4 px-0 py-1">
                             <div class="border" style="padding: 2px">
                                 <a class="s_img">
                                     <img src="https://images.unsplash.com/photo-1493479874819-4303c36fa0f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a944d1ade1118d11a240266462fcfc9a&auto=format&fit=crop&w=1349&q=80"
@@ -119,7 +119,7 @@
                 <div class="border-bottom">
                     <h1>花瓶</h1>
                 </div>
-                <div class="pt-2">
+                <div class="py-2">
                     <div id="countdown_dashboard">
                         <div class="dash text-center pt-2">
                             <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
@@ -170,6 +170,46 @@
                         </div>
                     </div>
                 </div>
+                <div class="py-1 m-2">
+                    <dl class="row">
+                        <dt class="col-sm-2">目前出價</dt>
+                        <dd class="col-sm-10">TWD 3,000</dd>
+
+                        <dt class="col-sm-2">起標價格</dt>
+                        <dd class="col-sm-10">TWD 3,000</dd>
+
+                        <dt class="col-sm-2">出價次數</dt>
+                        <dd class="col-sm-10">0 次出價</dd>
+
+                        <dt class="col-sm-2">出價增額</dt>
+                        <dd class="col-sm-10">TWD 50</dd>
+
+                        <dt class="col-sm-2">最高出價者</dt>
+                        <dd class="col-sm-10">-</dd>
+
+                        <dt class="col-sm-2">出價次數</dt>
+                        <dd class="col-sm-10">0 次出價</dd>
+
+                        <dt class="col-sm-2">商品狀況</dt>
+                        <dd class="col-sm-10">舊物</dd>
+
+                        <dt class="col-sm-2">付款方式</dt>
+                        <dd class="col-sm-10">銀行匯款、現場付清、線上刷卡(限海外)</dd>
+
+                        <dt class="col-sm-2">取貨方式</dt>
+                        <dd class="col-sm-10">台灣地區限面交(海外地區可運送)</dd>
+
+                        <dt class="col-sm-2">運　　費</dt>
+                        <dd class="col-sm-10">得拍者(買家)自費運送</dd>
+
+                        <dt class="col-sm-2">商品所在地</dt>
+                        <dd class="col-sm-10">台北市</dd>
+
+                        <dt class="col-sm-2">商品編號</dt>
+                        <dd class="col-sm-10">ABC-12345</dd>
+                    </dl>
+                </div>
+
             </div>
         </div>
     </div>
@@ -278,7 +318,7 @@
 
         $(function () {
             $('#countdown_dashboard').countDown({
-                omitWeeks:true,
+                omitWeeks: true,
                 targetDate: {
                     'day': 1,
                     'month': 6,

@@ -61,7 +61,7 @@ a:hover {
 }
 
 #countdown_dashboard .dash {
-	width: 74px;
+	width: 72px;
 	height: 75px;
 	background: url(../images/dash.png) no-repeat;
 	float: left;
@@ -73,7 +73,7 @@ a:hover {
 	font-size: 30pt;
 	font-weight: bold;
 	float: left;
-	width: 31px;
+	width: 32px;
 	text-align: center;
 	font-family:Verdana, Geneva, sans-serif;
 	color: #555;
@@ -85,7 +85,7 @@ a:hover {
 	position: absolute;
 	display: block;
 	bottom: 16px;
-	right: 6px;
+	right: 2px;
 	font-size: 9pt;
 	color: #ff8400;
 	text-transform: uppercase;
