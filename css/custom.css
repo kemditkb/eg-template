@@ -55,3 +55,43 @@ a:hover {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
+#countdown_dashboard {
+	height: 70px;
+}
+
+#countdown_dashboard .dash {
+	width: 74px;
+	height: 75px;
+	background: url(../images/dash.png) no-repeat;
+	float: left;
+	margin:0 2px;
+	position: relative;
+}
+
+#countdown_dashboard .dash .digit {
+	font-size: 30pt;
+	font-weight: bold;
+	float: left;
+	width: 31px;
+	text-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #555;
+	position: relative;
+	padding-left:4px;
+}
+
+#countdown_dashboard .dash_title {
+	position: absolute;
+	display: block;
+	bottom: 16px;
+	right: 6px;
+	font-size: 9pt;
+	color: #ff8400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#countdown_dashboard .dash_icon{
+	font-size: 18pt;
+}
