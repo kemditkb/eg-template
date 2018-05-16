@@ -6,6 +6,16 @@ a:hover {
     text-decoration: none;
 }
 
+.navbar-toggler-user {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
 .header-carousel-item {
     height: 450px;
 }
