@@ -77,7 +77,7 @@
         <div class="row">
             <div class="col-md-4 p-0">
                 <img src="https://images.unsplash.com/photo-1498480086004-2400bd8c3663?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bf38b7a55952ed8c408ae775094f9dd&auto=format&fit=crop&w=1350&q=80"
-                    alt="" id="b_img" width="100%">
+                    alt="" id="b_img" width="100%" class="d-none d-sm-block">
                 <div class="container py-2">
                     <div class="row px-0">
                         <div class="col-md-4 px-0 py-1">
@@ -119,7 +119,7 @@
                 <div class="border-bottom">
                     <h1>花瓶</h1>
                 </div>
-                <div class="py-2">
+                <div class="py-2 border-bottom">
                     <div id="countdown_dashboard">
                         <div class="dash text-center pt-2">
                             <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
@@ -170,10 +170,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="py-1 m-2">
+                <div class="py-1 m-2 border-bottom">
                     <dl class="row">
                         <dt class="col-sm-2">目前出價</dt>
-                        <dd class="col-sm-10">TWD 3,000</dd>
+                        <dd class="col-sm-10">
+                            <div class="text-danger h5">
+                                <strong>TWD 3,000</strong>
+                            </div>
+                        </dd>
 
                         <dt class="col-sm-2">起標價格</dt>
                         <dd class="col-sm-10">TWD 3,000</dd>
@@ -209,11 +213,80 @@
                         <dd class="col-sm-10">ABC-12345</dd>
                     </dl>
                 </div>
-
+                <div class="py-1 m-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="bid_type" id="gridRadios1" value="1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    直接出價
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="bid_type" id="gridRadios2" value="2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    自動出價
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 bg-warning">
+                                            <div class="text-white">
+                                                <p id="bid_message">請輸入出價金額</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="inputPrice" placeholder="請出價">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-block">出價</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                            aria-selected="true">拍品資訊</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">出價記錄</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">問與答</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum sint reiciendis facere quidem laborum quo odit. Eveniet asperiores dolorum labore rerum similique voluptates nostrum, recusandae ut eligendi veniam exercitationem possimus saepe. Praesentium id minus repellat ullam, aliquam laboriosam temporibus libero alias, et iusto quisquam sint eius dolores non placeat magni harum aperiam corrupti ducimus porro optio nisi commodi minima qui. Cupiditate maxime ea reprehenderit eligendi illo culpa animi cumque blanditiis, soluta incidunt libero, dolore est in iure commodi nam temporibus nisi dolores quasi placeat provident molestiae harum. Ducimus odio ipsa, repudiandae est ad tenetur corporis unde harum praesentium commodi!
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quis odio libero impedit, aliquam voluptatum adipisci repudiandae facilis ipsa amet esse repellat, quaerat ratione reprehenderit quod est fugiat. Tenetur autem officiis est veniam, odit voluptate iure animi delectus incidunt quod, laborum aliquam temporibus saepe harum, id dolor debitis veritatis aliquid excepturi? Ducimus neque voluptates, at, fugit dignissimos vitae molestiae dolorum voluptatibus totam id quo sequi. Temporibus, dolorem. Quos quam doloremque error illum voluptate et necessitatibus deserunt deleniti, natus quasi! Vitae, nesciunt ipsam dolores facilis ea numquam perferendis ex? Ab iste dolorem porro inventore deserunt eaque nihil. Magni explicabo non, reprehenderit ullam, omnis neque amet autem ipsum architecto sapiente incidunt id totam iure sequi magnam tempore. Impedit cumque modi perferendis vel atque repellat, minus vero numquam eius delectus magnam temporibus labore totam quaerat tempora nobis commodi quas natus odit est! Ducimus dolores nesciunt vel laborum itaque officia culpa laboriosam at corrupti facilis atque, iste consequatur illo? Labore laboriosam natus modi minima deleniti accusantium aliquam a! Tenetur illo explicabo cum, nesciunt quo cumque. Minus possimus eius similique facilis commodi magnam ut perspiciatis laudantium debitis, dolore temporibus accusamus doloribus quas quos id porro! Molestias voluptatem blanditiis debitis. Quaerat repellat fugit consequatur est minima.
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis earum dolor, repellat ratione cum eaque? Quidem perspiciatis rem consequatur velit quo, eaque vitae aperiam. Quasi, vitae voluptate! Perspiciatis sequi unde nesciunt quod quo fugiat asperiores corrupti perferendis facilis, consequatur, aut adipisci, minima voluptatum in qui aspernatur repudiandae. Repellendus, iste tempora.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="fb-root"></div>
     <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -328,6 +401,19 @@
                     'sec': 0
                 }
             });
+        })
+
+        $(function () {
+            $('input[type=radio][name=bid_type]').change(function () {
+
+                if (this.value == 1) {
+                    console.log(this.value);
+                    $('#bid_message').html('請輸入出價金額');
+                } else {
+                    console.log(this.value);
+                    $('#bid_message').html('請輸入單件出價上限<br />系統將自動出價至上限金額');
+                }
+            })
         })
 
     </script>
