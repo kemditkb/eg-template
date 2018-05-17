@@ -6,6 +6,11 @@ a:hover {
     text-decoration: none;
 }
 
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
 .navbar-toggler-user {
     display: inline-block;
     width: 1.5em;
@@ -20,26 +25,8 @@ a:hover {
     height: 450px;
 }
 
-.bg-cover {
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-caption {
+.bg-carousel-caption {
     background-color: rgba(0, 0, 0, .6);
-}
-
-.title {
-    color: #000000;
-    font-size: 1.5em;
-}
-
-.more {
-    font-size: 0.7em;
-}
-
-.main {
-    min-height: calc(100vh - (32px + 66px + 450px + 72px + 24px))
 }
 
 .product-card-title {
@@ -64,6 +51,19 @@ a:hover {
     height: 290px;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.title {
+    color: #000000;
+    font-size: 1.5em;
+}
+
+.more {
+    font-size: 0.7em;
+}
+
+.main {
+    min-height: calc(100vh - (32px + 66px + 450px + 72px + 24px))
 }
 
 #countdown_dashboard {
